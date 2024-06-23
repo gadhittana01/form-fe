@@ -41,7 +41,7 @@ const UserForm = () => {
     if (!validate()) return;
 
     try {
-      await axios.post('http://localhost:8080/v1/users', formData);
+      await axios.post('http://localhost:8000/v1/users', formData);
       setAlert({ type: 'success', message: 'Data submitted successfully!' });
       setFormData({
         name: '',
